@@ -1,0 +1,93 @@
+/* ─── Experience ─── */
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.experience__card {
+  position: relative;
+}
+
+/* Featured card — Nagpur Police prominence */
+.experience__card--featured {
+  border-left: 3px solid var(--amber);
+  background: linear-gradient(135deg, rgba(232, 163, 61, 0.06) 0%, var(--glass) 40%);
+}
+
+.experience__card--featured:hover { border-color: var(--amber); }
+
+.experience__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--amber);
+  background: rgba(232, 163, 61, 0.1);
+  border: 1px solid rgba(232, 163, 61, 0.2);
+}
+
+.experience__header { margin-bottom: 16px; }
+
+.experience__role {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.experience__org {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.experience__card--featured .experience__org {
+  color: var(--amber);
+  font-size: 15px;
+}
+
+.experience__unit {
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  margin-top: 3px;
+}
+
+.experience__points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+.experience__points li {
+  position: relative;
+  padding-left: 18px;
+  font-size: clamp(0.82rem, 0.92vw, 0.9rem);
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.experience__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(244, 242, 238, 0.25);
+}
+
+.experience__card--featured .experience__points li::before {
+  background: var(--amber);
+  opacity: 0.6;
+}
